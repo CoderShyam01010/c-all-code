@@ -1,29 +1,35 @@
 #include <stdio.h>
 void main()
 {
-    int a[6], x = 5, i, j, k;
-    for (int i = 0; i < 6; i++)
+    int arr[30], n, i;
+    int sum = 0;
+    printf("Enter n");
+    scanf("%d", &n);
+    printf("Enter array elements\n");
+    for (i = 0; i < n; i++)
     {
-        scanf("%d", &a[i]);
+        scanf("%d", &arr[i]);
     }
-    for (int i = 0; i < 5; i++)
+    printf("Array is \n");
+    for (i = 1; i <n; i++)
     {
-        for (int j = i + 1; j < 6; j++)
-        {
-            if (a[i] + a[j] == x)
-            printf("%d %d\n", a[i], a[j]);
-        }
+        printf("%d ", arr[i]);
     }
+   int large=arr[0];
+   int slarge=arr[1];
+   if(slarge>large){
+    int temp=slarge;
+    slarge=large;
+    large=temp;
+   }
+   for(i=2;i<n;i++){
+    if(arr[i]>large){
+        slarge=large;
+        large=arr[i];
+    }else if(arr[i]>slarge && arr[i]!=large){
+        slarge=arr[i];
+    }
+   }
+
+ printf("slarge and large is %d %d ",slarge,large);
 }
-/*#include<stdio.h>
-void main(){
-    int a[7]={5,4,8,3,1,4,5};
-    int i,large=0,slarge=0;
-    for(i=0;i<7;i++){
-        if(a[i]>large) large=a[i];
-    }
-    for(i=0;i<7;i++){
-        if(a[i]>slarge && a[i] != large) slarge=a[i];
-    }
-    printf("large=%d\nslarge=%d",large,slarge);
-}*/

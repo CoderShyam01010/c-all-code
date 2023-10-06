@@ -8,7 +8,7 @@ void main()
     for(i=0;i<n;i++){
     scanf("%d",&a[i]);
     }
-    for(i=1;i<=n-1;i++){
+    for(i=1;i<n;i++){          
          j=i;
         while(j>=1 && a[j]<a[j-1]){
             int temp=a[j-1];

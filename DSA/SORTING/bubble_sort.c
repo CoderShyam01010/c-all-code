@@ -5,7 +5,6 @@ void main(){
     for(i=0;i<8;i++){
         scanf("%d",&a[i]);
     }
-    
     for(i=0;i<7;i++){
         int flag=0;
         for(j=0;j<7-i;j++){
