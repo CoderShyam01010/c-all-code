@@ -1,0 +1,9 @@
+{
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "REVERSENUMBERPYRAMID.C": "cpp",
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "LOGIN_SCREEN.C": "cpp"
+    }
+}
